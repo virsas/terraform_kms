@@ -1,4 +1,4 @@
-# tfmod_kms
+# terraform_kms
 
 Terraform module to create KMS encryption keys.
 
@@ -17,7 +17,7 @@ region: Region in which the key should be created
 # KMS
 ######################
 module "kms-cloudwatch" {
-  source = "github.com/virsas/tfmod_acm"
+  source = "github.com/virsas/terraform_acm"
   description = "KMS key for Cloudwatch"
   region = "eu-west-1"
   organization = 012345678901
