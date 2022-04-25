@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.region
+}
+
 resource "aws_kms_key" "key" {
   description             = var.description
   policy = <<EOF
